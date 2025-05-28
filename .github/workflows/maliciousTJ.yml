@@ -20,9 +20,9 @@ jobs:
       # -----------------------------------------------------------------------------------------------------------
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@039afcd1024c210363c9d3fc8fd07e1f3fcf2867 # v35
         uses: tj-actions/changed-files@5e85e31a0187e8df23b438284aa04f21b55f1510
-        uses: tj-actions/changed-files@v1.1.3
+        uses: tj-actions/changed-files@8e7cc77ab9c1bffc233f2f3023d1b89ed44c9af5 # v1.1.3
         #malicious version now fixed 
         # To compare changes between the current commit and the last pushed remote commit set `since_last_remote_commit: true`. e.g
         # with:
@@ -41,7 +41,7 @@ jobs:
       # -----------------------------------------------------------------------------------------------------------
       - name: Get all changed markdown files
         id: changed-markdown-files
-        uses: tj-actions/changed-files@v45
+        uses: tj-actions/changed-files@48d8f15b2aaa3d255ca5af3eba4870f807ce6b3c # v45
         with:
           # Avoid using single or double quotes for multiline patterns
           files: |
